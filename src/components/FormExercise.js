@@ -14,11 +14,6 @@ import { validateExerciseForm } from '../utils/validateExerciseForm';
 
 const FormExercise = () => {
 
-    const handleSubmit = (values) => {
-        console.log('form values', values);
-        console.log('in JSON format:', JSON.stringify(values));
-    }
-
     return (
         <div>
             <h1 className='form-title'>Shannon Bentley's Form Exercise</h1>
@@ -151,11 +146,7 @@ const FormExercise = () => {
                                                 <option value="WY">Wyoming</option>
                                             </Input>
                                     </FormGroup>
-                            
-                                    <Button
-                                        color= 'primary'
-                                        type='submit'
-                                    >Submit</Button>
+                                    <Button color= 'primary' type='submit'>Submit</Button>
                                 </Form>
                             </CardBody>
                         </Card>
