@@ -14,8 +14,9 @@ import { validateExerciseForm } from '../utils/validateExerciseForm';
 
 const FormExercise = () => {
 
-    const handleSubmit = (e) => {
-
+    const handleSubmit = (values) => {
+        console.log('form values', values);
+        console.log('in JSON format:', JSON.stringify(values));
     }
 
     return (
