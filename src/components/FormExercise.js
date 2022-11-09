@@ -31,6 +31,16 @@ const FormExercise = () => {
                                 />
                             </Col>
                         </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor='email'>Email</Label>
+                            <Col>
+                                <Field 
+                                    name='email'
+                                    placeholder='Email'
+                                    className='form-control'
+                                />
+                            </Col>
+                        </FormGroup>
                     </Form>
                 </Formik>
         </div>
