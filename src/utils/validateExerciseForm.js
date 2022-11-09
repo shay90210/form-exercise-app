@@ -3,9 +3,7 @@ export const validateExerciseForm = (values) => {
 
     if (!values.fullName) {
         errors.fullName = 'Required';
-    } else if (!values.fullName.length < 4) {
-        errors.fullName = 'Name must be at least 4 characters.';
-    }
+    } 
 
     if (!values.email) {
         errors.email = 'Required';

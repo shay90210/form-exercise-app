@@ -16,6 +16,7 @@ const FormExercise = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        console.log()
     }
 
     return (
@@ -150,7 +151,7 @@ const FormExercise = () => {
                                                 <option value="WY">Wyoming</option>
                                             </Input>
                                     </FormGroup>
-                                    <Button color= 'primary' type='submit'>Submit</Button>
+                                    <Button color= 'primary' type='submit' onClick={handleSubmit}>Submit</Button>
                                 </Form>
                             </CardBody>
                         </Card>
