@@ -2,6 +2,10 @@
 
 ## An exercise form primarily developed using the framework React and other scalable UI libraries.
 
+### Project Navigation 
+- FormExercise.js is located in components folder
+- validateExerciseForm.js is located in utils folder
+
 ### Form Exercise Goals 
 - Display a form with inputs for each field outlined in the instructions
 - Allow a user to complete and submit the form
