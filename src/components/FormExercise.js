@@ -46,7 +46,7 @@ const FormExercise = () => {
                             <Label htmlFor='password'>Password</Label>
                                 <Field 
                                     name='password'
-                                    placeholder='password'
+                                    placeholder='Password'
                                     className='form-control'
                                 />
                         </FormGroup>
