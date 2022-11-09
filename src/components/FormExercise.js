@@ -4,7 +4,8 @@ import {
     Label,
     FormGroup,
     Col,
-    Input
+    Input,
+    Button
 } from 'reactstrap';
 
 const FormExercise = () => {
@@ -127,6 +128,8 @@ const FormExercise = () => {
                                     <option value="WY">Wyoming</option>
                                 </Input>
                         </FormGroup>
+                
+                        <Button>Submit</Button>
                     </Form>
                 </Formik>
         </div>
