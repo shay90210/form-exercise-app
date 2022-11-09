@@ -20,7 +20,8 @@ const FormExercise = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        alert(`Your form has been submitted. Thank you ${fullName}`)
+        alert(`Your form has been submitted. Thank you ${fullName}.`);
+        console.log(FormExercise);
     }
 
     return (
@@ -47,7 +48,7 @@ const FormExercise = () => {
                                     <Label htmlFor='email' className='label-style'>Email</Label>
                                     <Col>
                                         <Input 
-                                            type='text'
+                                            type='email'
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
                                         />
@@ -57,7 +58,7 @@ const FormExercise = () => {
                                     <Label htmlFor='password' className='label-style'>Password</Label>
                                     <Col>
                                         <Input 
-                                            type='text'
+                                            type='password'
                                             value={password}
                                             onChange={(e) => setPassword(e.target.value)}
                                         />
