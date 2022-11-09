@@ -3,7 +3,8 @@ import {
     Form,
     Label,
     FormGroup,
-    Col
+    Col,
+    Input
 } from 'reactstrap';
 
 const FormExercise = () => {
@@ -48,6 +49,23 @@ const FormExercise = () => {
                                     placeholder='password'
                                     className='form-control'
                                 />
+                        </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor='occupation'>Occupation</Label>
+                                <Input 
+                                    id='occupation'
+                                    name='Select Occupation'
+                                    type='select'
+                                >
+                                    <option>occupation1</option>
+                                    <option>occupation2</option>
+                                    <option>occupation3</option>
+                                    <option>occupation4</option>
+                                    <option>occupation5</option>
+                                    <option>occupation6</option>
+                                    <option>occupation7</option>
+                                    <option>occupation8</option>
+                                </Input>
                         </FormGroup>
                     </Form>
                 </Formik>
