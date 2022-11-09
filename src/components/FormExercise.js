@@ -1,4 +1,4 @@
-import { Formik, Field } from 'formik';
+import { Formik, Field, ErrorMessage } from 'formik';
 import { 
     Form,
     Label,
@@ -7,6 +7,7 @@ import {
     Input,
     Button
 } from 'reactstrap';
+import { validateExerciseForm } from '../utils/validateExerciseForm';
 
 const FormExercise = () => {
 
@@ -21,6 +22,7 @@ const FormExercise = () => {
                         occupation: '',
                         state: ''
                     }}
+                    validate={validateExerciseForm}
                 >
                     <Form className='form-styles'>
                         <FormGroup>
@@ -31,6 +33,9 @@ const FormExercise = () => {
                                     placeholder='Full Name'
                                     className='form-control'
                                 />
+                                <ErrorMessage name='fullName'>
+                                    {(msg) => <p className='text-danger'>{msg}</p>}
+                                </ErrorMessage>
                             </Col>
                         </FormGroup>
                         <FormGroup>
@@ -41,6 +46,9 @@ const FormExercise = () => {
                                     placeholder='Email'
                                     className='form-control'
                                 />
+                                <ErrorMessage name='email'>
+                                    {(msg) => <p className='text-danger'>{msg}</p>}
+                                </ErrorMessage>
                             </Col>
                         </FormGroup>
                         <FormGroup>
@@ -50,6 +58,9 @@ const FormExercise = () => {
                                     placeholder='Password'
                                     className='form-control'
                                 />
+                                <ErrorMessage name='password'>
+                                    {(msg) => <p className='text-danger'>{msg}</p>}
+                                </ErrorMessage>
                         </FormGroup>
                         <FormGroup>
                             <Label htmlFor='occupation'>Occupation</Label>
