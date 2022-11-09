@@ -7,6 +7,11 @@ import App from './App';
 
 //STYLING 
 import './App.css';
+import 'typeface-open-sans';
+
+//BOOTSTRAP IMPORTS
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-social/bootstrap-social.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
