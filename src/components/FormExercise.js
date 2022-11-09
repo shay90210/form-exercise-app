@@ -41,6 +41,14 @@ const FormExercise = () => {
                                 />
                             </Col>
                         </FormGroup>
+                        <FormGroup>
+                            <Label htmlFor='password'>Password</Label>
+                                <Field 
+                                    name='password'
+                                    placeholder='password'
+                                    className='form-control'
+                                />
+                        </FormGroup>
                     </Form>
                 </Formik>
         </div>
