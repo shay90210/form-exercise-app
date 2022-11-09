@@ -18,6 +18,9 @@ To create the state and occupation options, I had to be strategic with knowing h
 - Copied a list of already created state select code from FreeFormMatter USA HTML Select List (I use this website for personal projects when creating state select options with a dropdown menu)
 
 ### Transitions of Project via Images
+
+#### INITIAL FORM BEFORE STYLING
+- Appearance of the form with only the added content
 <img src='/src/img/initialform.png' width='500px' alt='inital project before styling and props' />
 
 
