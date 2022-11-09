@@ -14,6 +14,10 @@ import { validateExerciseForm } from '../utils/validateExerciseForm';
 
 const FormExercise = () => {
 
+    const handleSubmit = (e) => {
+
+    }
+
     return (
         <div>
             <h1 className='form-title'>Shannon Bentley's Form Exercise</h1>
@@ -25,6 +29,7 @@ const FormExercise = () => {
                         occupation: '',
                         state: ''
                     }}
+                    onSubmit={handleSubmit}
                     validate={validateExerciseForm}
                 >
                     <Container className='mt-5'>
@@ -148,6 +153,7 @@ const FormExercise = () => {
                             
                                     <Button
                                         color= 'primary'
+                                        type='submit'
                                     >Submit</Button>
                                 </Form>
                             </CardBody>
