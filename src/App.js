@@ -1,3 +1,4 @@
+//STYLING
 import './App.css';
 
 function App() {
