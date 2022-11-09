@@ -8,11 +8,15 @@ import {
     Button,
     CardBody,
     Card,
-    Container
+    Container,
 } from 'reactstrap';
 import { validateExerciseForm } from '../utils/validateExerciseForm';
 
 const FormExercise = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
 
     return (
         <div>
