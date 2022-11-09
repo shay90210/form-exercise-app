@@ -47,7 +47,7 @@ const FormExercise = () => {
                                     <Label htmlFor='email' className='label-style'>Email</Label>
                                     <Col>
                                         <Input 
-                                            type='email'
+                                            type='text'
                                             value={email}
                                             onChange={(e) => setEmail(e.target.value)}
                                         />
@@ -57,7 +57,7 @@ const FormExercise = () => {
                                     <Label htmlFor='password' className='label-style'>Password</Label>
                                     <Col>
                                         <Input 
-                                            type='password'
+                                            type='text'
                                             value={password}
                                             onChange={(e) => setPassword(e.target.value)}
                                         />
