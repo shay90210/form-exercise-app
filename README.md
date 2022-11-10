@@ -18,16 +18,16 @@ To create the entire form, I had to be strategic with knowing which form worked 
 - The fetch method was the best option because the endpoint is single url - https://frontend-take-home.fetchrewards.com/form
 - Copied a list of already created state select code from FreeFormMatter USA HTML Select List (I use this website for personal projects when creating state select options with a dropdown menu)
 
-### Assignment Successes
+### Assignment Successes (Wins)
 - Getting the form to render on the page
 - The functionality of interacting with the form
 - The password hides for security purposes
 - Select dropdowns appears on one option when chosen
 - The form was sent to the console.log to show successful submission
 
-### Assignment Areas of Improvement
-- 
-- 
+### Assignment Areas of Improvement (Challenges)
+- Continued to receive 400 response after POST request sent; changed method multiple times to receive the correct message - 'stated that the URL was not applicable to send a POST request'
+- By setting the types on password and email, the system gave suggestions as to what was a real email and a qualified password; however, I couldn't find a method that would work to prevent the user from submitting the form
 - 
 
 
