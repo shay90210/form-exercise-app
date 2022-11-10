@@ -17,12 +17,11 @@ const FormExercise = () => {
     const [password, setPassword] = useState('');
     const [occupation, setOccupation] = useState('');
     const [state, setState] = useState('');
-    const [message, setMessage] = useState('');
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('https://frontend-take-home.fetchrewards.com/form', {
+            const res = await fetch('https://frontend-take-home.fetchrewards.com/form/post', {
                 method: 'POST',
                 body: JSON.stringify({
                     fullName: fullName,
@@ -33,15 +32,15 @@ const FormExercise = () => {
                 }),
             });
             await res.json();
-            if (res.status === 201) {
+            if (res.status === 200) {
                 setFullName('');
                 setEmail('');
                 setPassword('');
                 setOccupation('');
                 setState('');
-                setMessage('User created successfully');
+                alert('User has been successfully created!')
             } else {
-                setMessage('An error has occurred');
+                alert('An error has occurred.')
             }
         } catch (err) {
             console.log(err);
@@ -179,8 +178,6 @@ const FormExercise = () => {
                                 >
                                     Create User
                                 </Button>
-
-                                <div>{message ? <p>{message}</p> : null}</div>
                             </Form>
                         </CardBody>
                     </Card>
