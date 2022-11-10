@@ -21,7 +21,7 @@ const FormExercise = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch('https://frontend-take-home.fetchrewards.com/form/post', {
+            const res = await fetch('https://frontend-take-home.fetchrewards.com/form', {
                 method: 'POST',
                 body: JSON.stringify({
                     fullName: fullName,
@@ -38,14 +38,13 @@ const FormExercise = () => {
                 setPassword('');
                 setOccupation('');
                 setState('');
-                alert('User has been successfully created!')
+                alert('User has been successfully created!');
             } else {
-                alert('An error has occurred.')
+                alert('An error has occurred.');
             }
         } catch (err) {
             console.log(err);
         }
-    
     };
 
     return (
