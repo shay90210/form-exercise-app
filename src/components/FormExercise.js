@@ -52,9 +52,8 @@ const FormExercise = () => {
             <h1 className='form-title'>Join Our Team Today!</h1>
                 <Container className='mt-5'>
                     <Card>
-                        <CardBody>
+                        <CardBody className='form-card'>
                             <Form 
-                                className='form-style'
                                 onSubmit={handleSubmit}
                             >
                                 <FormGroup>
