@@ -25,10 +25,18 @@ To create the entire form, I had to be strategic with knowing which form worked 
 - Select dropdowns appears on one option when chosen
 - The form was sent to the console.log to show successful submission
 
+### Assignment Areas of Improvement
+- 
+- 
+- 
+
+
 ### Transitions of Project via Images
 
-#### INITIAL FORM BEFORE STYLING
+#### BEFORE AND AFTER STYLING
 - Appearance of the form with only the added content
 <img src='/src/img/initialform.png' width='500px' alt='inital project before styling and props' />
+
+<img src='/src/img/screencapture-localhost-3001-2022-11-09-22_59_10.png' width='500px' alt='minimal styling on form' />
 
 
