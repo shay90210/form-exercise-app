@@ -17,12 +17,38 @@ const FormExercise = () => {
     const [password, setPassword] = useState('');
     const [occupation, setOccupation] = useState('');
     const [state, setState] = useState('');
+    const [message, setMessage] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        alert(`Your form has been submitted. Thank you ${fullName}.`);
-        console.log(FormExercise);
-    }
+        try {
+            const res = await fetch('https://frontend-take-home.fetchrewards.com/form', {
+                method: 'POST',
+                body: JSON.stringify({
+                    fullName: fullName,
+                    email: email,
+                    password: password,
+                    occupation: occupation,
+                    state: state,
+                }),
+            });
+            await res.json();
+            if (res.status === 201) {
+                setFullName('');
+                setEmail('');
+                setPassword('');
+                setOccupation('');
+                setState('');
+                setMessage('User created successfully');
+            } else {
+                setMessage('An error has occurred');
+            }
+        } catch (err) {
+            console.log(err);
+        }
+    
+    };
+
 
     return (
         <div>
@@ -147,7 +173,14 @@ const FormExercise = () => {
                                             <option value="WY">Wyoming</option>
                                         </Input>
                                 </FormGroup>
-                                <Button color= 'primary' type='submit'>Create User</Button>
+                                <Button 
+                                    color= 'primary' 
+                                    type='submit' 
+                                >
+                                    Create User
+                                </Button>
+
+                                <div>{message ? <p>{message}</p> : null}</div>
                             </Form>
                         </CardBody>
                     </Card>
