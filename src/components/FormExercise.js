@@ -43,13 +43,13 @@ const FormExercise = () => {
                 alert('An error has occurred.');
             }
         } catch (err) {
-            console.log(err);
+            console.error(err);
         }
     };
 
     return (
-        <div>
-            <h1 className='form-title'>Shannon Bentley's Form Exercise</h1>
+        <div className='form-main'>
+            <h1 className='form-title'>Join Our Team Today!</h1>
                 <Container className='mt-5'>
                     <Card>
                         <CardBody>

@@ -2,8 +2,25 @@
 $--clr-primary: #005792;
 $--clr-secondary: #5585b5;
 $--clr-dark:#272343;
+$--clr-light: rgb(187, 182, 182);
 
 // GLOBAL FONT 
 .form-style {
     font-family: 'open-sans';
+}
+
+// FORM TITLE
+.form-main {
+    background-image: url(../src/img/pexels-quang-nguyen-vinh-2649403.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 400px;
+    .form-title {
+        text-align: center;
+        font-family: 'open-sans';
+        padding-top: 50px;
+        font-size: 72px;
+        color: $--clr-light;
+        font-weight: bolder;
+    }
 }

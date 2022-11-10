@@ -8,6 +8,7 @@ import App from './App';
 //STYLING 
 import './App.css';
 import 'typeface-open-sans';
+import 'typeface-roboto-condensed'
 
 //BOOTSTRAP IMPORTS
 import 'bootstrap/dist/css/bootstrap.min.css';
