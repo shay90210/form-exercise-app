@@ -4,7 +4,6 @@
 
 ### Project Navigation 
 - FormExercise.js is located in components folder
-- validateExerciseForm.js is located in utils folder
 
 ### Form Exercise Goals 
 - Display a form with inputs for each field outlined in the instructions
@@ -12,8 +11,10 @@
 - Do not allow form submission without completing the entire form
 - Provide feedback upon successful form submission
 
-### Creating the State and Occupation Options 
-To create the state and occupation options, I had to be strategic with knowing how to use the 'select' type. 
+### Creating the Form 
+To create the entire form, I had to be strategic with knowing which form worked best for the POST request and meeting the needs of my code.
+- Swapped between FORMIK and REACT FORMS (was undecided due to the lack of documentation for FORMIK to understand how to connect the POST and GET method to the code)
+- Utilized the fetch API method without creating a server because it is only a form component being used 
 
 - Copied a list of already created state select code from FreeFormMatter USA HTML Select List (I use this website for personal projects when creating state select options with a dropdown menu)
 
